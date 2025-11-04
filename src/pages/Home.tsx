@@ -13,6 +13,9 @@ import RedisIcon from "../assets/icons/redis-original.png";
 import TailwindCssIcon from "../assets/icons/tailwindcss-plain.png";
 import TypescriptIcon from "../assets/icons/typescript-original.png";
 
+// Imagem de perfil
+import Perfil from "../assets/images/perfil.png"
+
 // Imagem de projetos
 import ProjetosSection from "../components/ProjectSession";
 import Navbar from "../components/NavBar";
@@ -90,11 +93,10 @@ export default function HomePage() {
           {/* Foto */}
           <article className="flex-1 flex justify-center animate-fadeIn md:mt-0 mt-10">
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-green-500 to-emerald-300 blur-xl opacity-30 animate-pulse overflow-hidden" />
               <img
-                src="/images/perfil.jpg"
+                src={Perfil}
                 alt="Foto de Eder"
-                className="w-[280px] h-[280px] md:w-[320px] md:h-80 rounded-full object-cover border-4 border-green-600 shadow-xl transition-transform duration-500 hover:scale-105"
+                className="w-[280px] h-[280px] z-10 md:w-[320px] md:h-80 rounded-full object-cover border-4 border-green-600 shadow-xl transition-transform duration-500 hover:scale-105"
               />
             </div>
           </article>
@@ -208,9 +210,8 @@ export default function HomePage() {
           {/* Imagem com efeito */}
           <article className="flex-1 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-green-500 to-emerald-300 blur-2xl opacity-30 animate-pulse" />
               <img
-                src="/images/perfil2.jpg"
+                src={Perfil}
                 alt="Foto de Eder Henrique"
                 className="w-[280px] h-[320px] md:w-[340px] md:h-[380px] object-cover rounded-3xl border-4 border-green-600 shadow-xl transition-transform duration-500 hover:scale-105"
               />
