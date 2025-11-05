@@ -1,9 +1,14 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
+
+import { Sun, Moon } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -20,11 +25,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-sm"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
+        ? "backdrop-blur-md bg-white/70 dark:bg-gray-900/70 shadow-sm"
+        : "bg-transparent"
+        }`}
     >
       <nav className="flex items-center justify-between px-6 md:px-20 py-4">
         {/* Logo */}
@@ -35,8 +39,21 @@ export default function Navbar() {
           &lt;Eder /&gt;
         </a>
 
+
+
         {/* Menu Desktop */}
         <ul className="hidden md:flex gap-10">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className={`w-12 h-6 flex items-center rounded-full hover:cursor-pointer p-1 duration-300 ${theme === 'dark' ? "bg-emerald-600" : "bg-gray-300 dark:bg-gray-500"}`}
+          >
+            <div className={`flex items-center justify-center bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ${theme === 'dark' ? "translate-x-6" : ""}`}>
+              {
+                theme === "dark" ? <Moon size={14} /> : <Sun size={14} />
+              }
+            </div>
+          </button>
           {links.map((link) => (
             <li key={link.name}>
               <a
@@ -51,13 +68,26 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Botão Mobile */}
-        <button
-          className="md:hidden text-gray-800 dark:text-gray-100"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        {/* Botão de Menu e alteral tema Mobile */}
+        <div className="md:hidden flex flex-row gap-x-5">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className={`w-12 h-6 flex items-center  rounded-full hover:cursor-pointer p-1 duration-300 ${theme === 'dark' ? "bg-emerald-600" : "bg-gray-300 dark:bg-gray-500"}`}
+          >
+            <div className={`flex items-center justify-center bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ${theme === 'dark' ? "translate-x-6" : ""}`}>
+              {
+                theme === "dark" ? <Moon size={14} /> : <Sun size={14} />
+              }
+            </div>
+          </button>
+          <button
+            className=" text-gray-800 dark:text-gray-100"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
 
         {/* Menu Mobile */}
         {menuOpen && (
