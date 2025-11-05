@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext({
-  theme: "dark", // valor padrão
+  theme: localStorage.getItem("theme") === "light" ? "light" : "dark", // valor padrão
   toggleTheme: () => { }, // função vazia padrão
 });
 
@@ -14,6 +14,7 @@ export function ThemeProvider({ children }: {
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light")
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light")
   }
 
   return (
