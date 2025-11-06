@@ -82,7 +82,7 @@ export default function HomePage() {
                 Ver Projetos
               </a>
               <a
-                href="https://wa.me/+5516993979822?text='Ola, estaria interessado em contratar os seus serviços.'"
+                href="https://wa.me/+5516993979822?text=Ola, estaria interessado em contratar os seus serviços."
                 className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Entrar em Contato
@@ -156,7 +156,6 @@ export default function HomePage() {
       <ProjetosSection />
 
       {/* ===== Section Sobre Mim ===== */}
-      {/* ===== Section Sobre Mim ===== */}
       <section
         id="sobre-mim"
         className="min-h-screen bg-gradient-to-b from-emerald-50 to-white dark:from-gray-800 dark:to-gray-900 flex flex-col items-center justify-center px-6 md:px-20 py-20 transition-colors duration-500"
@@ -192,7 +191,7 @@ export default function HomePage() {
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-6">
               <a
-                href="https://wa.me/+5516993979822?text='Ola, estaria interessado em contratar os seus serviços.'"
+                href="https://wa.me/+5516993979822?text=Ola, estaria interessado em contratar os seus serviços."
                 className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Entrar em Contato
