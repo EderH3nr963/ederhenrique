@@ -50,7 +50,7 @@ export default function HomePage() {
       {/* ===== Section Home ===== */}
       <section
         id="home"
-        className="min-h-screen flex flex-col items-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
+        className="min-h-screen flex flex-col items-center bg-gradient-to-b from-white to-emerald-50  dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
       >
         <Navbar/>
 
@@ -106,7 +106,7 @@ export default function HomePage() {
       {/* ===== Section Habilidades ===== */}
       <section
         id="habilidades"
-        className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 py-20 bg-gradient-to-b from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-500"
+        className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 py-20 bg-gradient-to-b from-emerald-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-500"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-6">
           &lt; Minhas <span className="text-green-600">Habilidades</span> /&gt;
@@ -159,7 +159,7 @@ export default function HomePage() {
       {/* ===== Section Sobre Mim ===== */}
       <section
         id="sobre-mim"
-        className="min-h-screen bg-gradient-to-b from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 flex flex-col items-center justify-center px-6 md:px-20 py-20 transition-colors duration-500"
+        className="min-h-screen bg-gradient-to-b from-emerald-50 to-white dark:from-gray-800 dark:to-gray-900 flex flex-col items-center justify-center px-6 md:px-20 py-20 transition-colors duration-500"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-12">
           &lt; <span className="text-green-600">Sobre</span> mim /&gt;

@@ -15,7 +15,7 @@ export default function ProjetosSection() {
   return (
     <section
       id="projetos"
-      className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center px-6 md:px-20 py-20 transition-colors duration-500"
+      className="min-h-screen bg-gradient-to-b from-white to-emerald-50 dark:from-gray-900 dark:to-gray-800 flex flex-col items-center justify-center px-6 md:px-20 py-20 transition-colors duration-500"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-10">
         &lt; Meus <span className="text-green-600">Projetos</span> /&gt;
