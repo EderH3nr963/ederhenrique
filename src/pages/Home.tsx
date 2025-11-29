@@ -14,7 +14,7 @@ import TailwindCssIcon from "../assets/icons/tailwindcss-plain.png";
 import TypescriptIcon from "../assets/icons/typescript-original.png";
 
 // Imagem de perfil
-import Perfil from "../assets/images/perfil.png"
+import Perfil from "../assets/images/perfil.png";
 
 // Imagem de projetos
 import ProjetosSection from "../components/ProjectSession";
@@ -52,7 +52,7 @@ export default function HomePage() {
         id="home"
         className="min-h-screen flex flex-col items-center bg-gradient-to-b from-white to-emerald-50  dark:from-gray-900 dark:to-gray-800 transition-colors duration-500"
       >
-        <Navbar/>
+        <Navbar />
 
         <div className="min-h-[calc(100vh-50px)] not-md:mt-10 flex flex-col-reverse md:flex-row items-center justify-center w-full px-6 md:px-20 gap-10">
           {/* Texto principal */}
@@ -69,9 +69,9 @@ export default function HomePage() {
             </h2>
 
             <p className="text-gray-700 dark:text-gray-300 max-w-md mx-auto md:mx-0">
-              Sou um desenvolvedor apaixonado por criar experiências digitais modernas,
-              rápidas e responsivas. Gosto de transformar ideias em interfaces
-              funcionais e elegantes.
+              Sou um desenvolvedor apaixonado por criar experiências digitais
+              modernas, rápidas e responsivas. Gosto de transformar ideias em
+              interfaces funcionais e elegantes.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
@@ -113,22 +113,30 @@ export default function HomePage() {
         </h2>
 
         <p className="text-gray-700 dark:text-gray-300 text-center max-w-2xl mb-12">
-          Tenho experiência em desenvolvimento web completo — do front-end dinâmico à
-          criação de APIs robustas no back-end. Gosto de escrever código limpo,
-          performático e escalável.
+          Tenho experiência em desenvolvimento web completo — do front-end
+          dinâmico à criação de APIs robustas no back-end. Gosto de escrever
+          código limpo, performático e escalável.
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
           {[
             { name: "React", icon: ReactIcon, color: "text-sky-500" },
             { name: "Node.js", icon: NodeJsIcon, color: "text-green-600" },
-            { name: "TypeScript", icon: TypescriptIcon, color: "text-blue-600" },
+            {
+              name: "TypeScript",
+              icon: TypescriptIcon,
+              color: "text-blue-600",
+            },
             { name: "PHP", icon: PhpIcon, color: "text-indigo-500" },
             { name: "Tailwind", icon: TailwindCssIcon, color: "text-cyan-400" },
             { name: "Redis", icon: RedisIcon, color: "text-red-500" },
             { name: "MySQL", icon: MysqlIcon, color: "text-blue-400" },
             { name: "Git", icon: GitIcon, color: "text-orange-500" },
-            { name: "Javascript", icon: JavascriptIcon, color: "text-yellow-500" },
+            {
+              name: "Javascript",
+              icon: JavascriptIcon,
+              color: "text-yellow-500",
+            },
             { name: "Express", icon: ExpressIcon, color: "text-gray-500" },
           ].map((skill) => (
             <div
@@ -168,25 +176,30 @@ export default function HomePage() {
           {/* Texto de apresentação */}
           <article className="flex-1 space-y-5 text-center md:text-left">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-              Sou <span className="text-green-600 font-medium">Eder Henrique</span>, um
-              desenvolvedor apaixonado por tecnologia e criação de soluções inteligentes.
-              Tenho experiência no desenvolvimento de aplicações completas, desde o
-              <span className="text-green-600 font-medium"> front-end</span> moderno e
-              responsivo até o <span className="text-green-600 font-medium">back-end</span>{" "}
+              Sou{" "}
+              <span className="text-green-600 font-medium">Eder Henrique</span>,
+              um desenvolvedor apaixonado por tecnologia e criação de soluções
+              inteligentes. Tenho experiência no desenvolvimento de aplicações
+              completas, desde o
+              <span className="text-green-600 font-medium"> front-end</span>{" "}
+              moderno e responsivo até o{" "}
+              <span className="text-green-600 font-medium">back-end</span>{" "}
               robusto com APIs seguras e escaláveis.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-              Valorizo um código limpo, bem estruturado e de fácil manutenção. Acredito que
-              cada projeto é uma oportunidade de aprendizado e evolução — e adoro transformar
-              ideias em experiências digitais reais.
+              Valorizo um código limpo, bem estruturado e de fácil manutenção.
+              Acredito que cada projeto é uma oportunidade de aprendizado e
+              evolução — e adoro transformar ideias em experiências digitais
+              reais.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
               Atualmente, foco meus estudos em{" "}
-              <span className="text-green-600 font-medium">React, Node.js</span> e{" "}
-              <span className="text-green-600 font-medium">TypeScript</span>, mas estou sempre
-              explorando novas tecnologias e boas práticas de desenvolvimento.
+              <span className="text-green-600 font-medium">React, Node.js</span>{" "}
+              e <span className="text-green-600 font-medium">TypeScript</span>,
+              mas estou sempre explorando novas tecnologias e boas práticas de
+              desenvolvimento.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-6">
@@ -197,7 +210,7 @@ export default function HomePage() {
                 Entrar em Contato
               </a>
               <a
-                href="/cv.pdf"
+                href="/curriculo.pdf"
                 download
                 className="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-medium px-6 py-2 rounded-full transition-all duration-300"
               >
@@ -218,7 +231,7 @@ export default function HomePage() {
           </article>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
