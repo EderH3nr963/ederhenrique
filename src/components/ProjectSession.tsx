@@ -1,4 +1,6 @@
 import ImageMoneyMagnet from "../assets/images/projeto-moneymagnet.png";
+import ImageChatMagnetApi from "../assets/images/projeto-chat-magnet-api.png";
+import ImageBankingApi from "../assets/images/projeto-api-banking.png";
 
 export default function ProjetosSection() {
   const projetos = [
@@ -9,6 +11,20 @@ export default function ProjetosSection() {
       description:
         "Dashboard inteligente para controle financeiro de microempreendedores. Permite cadastrar transações, visualizar métricas e gerar relatórios com um design moderno e responsivo.",
       image: ImageMoneyMagnet,
+    },
+    {
+      nomeProjeto: "ChatConnectApi",
+      linkGit: "https://github.com/EderH3nr963/chatConnectBack",
+      description:
+        "API robusta para aplicação de mensagens em tempo real, construída com Express e TypeScript. Inclui autenticação JWT, gerenciamento de usuários, criação de chats em grupo, envio e listagem de mensagens, integração com WebSockets e arquitetura escalável seguindo boas práticas.",
+      image: ImageChatMagnetApi,
+    },
+    {
+      nomeProjeto: "ApiSitemaBancario",
+      linkGit: "https://github.com/EderH3nr963/apiSistemaBancario",
+      description:
+        "API para gerenciamento de um sistema bancário, desenvolvida com Node.js e TypeScript. Permite criação de contas, operações de depósito e saque, consultas de saldo, histórico de transações e autenticação segura com JWT. Estruturada com arquitetura limpa e foco em segurança e consistência dos dados.",
+      image: ImageBankingApi,
     },
   ];
 
@@ -50,19 +66,23 @@ export default function ProjetosSection() {
 
               {/* Links */}
               <div className="flex gap-4 pt-4">
-                <a
-                  href={projeto.linkWeb}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
-                >
-                  Ver Online
-                </a>
+                {projeto.linkWeb && (
+                  <a
+                    href={projeto.linkWeb}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-medium py-2 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    Ver Online
+                  </a>
+                )}
                 <a
                   href={projeto.linkGit}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-medium py-2 rounded-full transition-all duration-300"
+                  className={`${
+                    !projeto.linkWeb ? "w-1/2" : "flex-1"
+                  } text-center border-2  border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-medium py-2 rounded-full transition-all duration-300`}
                 >
                   GitHub
                 </a>
