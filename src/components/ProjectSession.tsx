@@ -7,6 +7,7 @@ export default function ProjetosSection() {
     {
       nomeProjeto: "MoneyMagnet",
       linkGit: "https://github.com/EderH3nr963/money_magnet",
+      linkWeb: "",
       description:
         "Dashboard inteligente para controle financeiro de microempreendedores. Permite cadastrar transações, visualizar métricas e gerar relatórios com um design moderno e responsivo.",
       image: ImageMoneyMagnet,
@@ -14,6 +15,7 @@ export default function ProjetosSection() {
     {
       nomeProjeto: "ChatConnectApi",
       linkGit: "https://github.com/EderH3nr963/chatConnectBack",
+      linkWeb: "",
       description:
         "API robusta para aplicação de mensagens em tempo real, construída com Express e TypeScript. Inclui autenticação JWT, gerenciamento de usuários, criação de chats em grupo, envio e listagem de mensagens, integração com WebSockets e arquitetura escalável seguindo boas práticas.",
       image: ImageChatMagnetApi,
@@ -21,6 +23,7 @@ export default function ProjetosSection() {
     {
       nomeProjeto: "ApiSitemaBancario",
       linkGit: "https://github.com/EderH3nr963/apiSistemaBancario",
+      linkWeb: "",
       description:
         "API para gerenciamento de um sistema bancário, desenvolvida com Node.js e TypeScript. Permite criação de contas, operações de depósito e saque, consultas de saldo, histórico de transações e autenticação segura com JWT. Estruturada com arquitetura limpa e foco em segurança e consistência dos dados.",
       image: ImageBankingApi,
