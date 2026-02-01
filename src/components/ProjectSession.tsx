@@ -6,7 +6,6 @@ export default function ProjetosSection() {
   const projetos = [
     {
       nomeProjeto: "MoneyMagnet",
-      linkWeb: "https://moneymagnet-olive.vercel.app/",
       linkGit: "https://github.com/EderH3nr963/money_magnet",
       description:
         "Dashboard inteligente para controle financeiro de microempreendedores. Permite cadastrar transações, visualizar métricas e gerar relatórios com um design moderno e responsivo.",
