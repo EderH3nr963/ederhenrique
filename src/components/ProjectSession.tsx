@@ -7,7 +7,7 @@ export default function ProjetosSection() {
     {
       nomeProjeto: "MoneyMagnet",
       linkGit: "https://github.com/EderH3nr963/money_magnet",
-      linkWeb: "",
+      linkWeb: "https://money-magnet-iota.vercel.app",
       description:
         "Dashboard inteligente para controle financeiro de microempreendedores. Permite cadastrar transações, visualizar métricas e gerar relatórios com um design moderno e responsivo.",
       image: ImageMoneyMagnet,
