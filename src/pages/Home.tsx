@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 // Ícones das linguagens de programação
-import ExpressIcon from "../assets/icons/express-original.png";
+import SpringBoot from "../assets/icons/spring-boot.png";
 import GitIcon from "../assets/icons/git-original-wordmark.png";
 import JavascriptIcon from "../assets/icons/javascript-plain.png";
 import MysqlIcon from "../assets/icons/mysql-original-wordmark.png";
 import NodeJsIcon from "../assets/icons/nodejs-original.png";
-import PhpIcon from "../assets/icons/php-plain.png";
+import JavaIcon from "../assets/icons/java.png";
 import ReactIcon from "../assets/icons/react-original.png";
 import RedisIcon from "../assets/icons/redis-original.png";
 import TailwindCssIcon from "../assets/icons/tailwindcss-plain.png";
@@ -127,7 +127,7 @@ export default function HomePage() {
               icon: TypescriptIcon,
               color: "text-blue-600",
             },
-            { name: "PHP", icon: PhpIcon, color: "text-indigo-500" },
+            { name: "Java", icon: JavaIcon, color: "text-indigo-500" },
             { name: "Tailwind", icon: TailwindCssIcon, color: "text-cyan-400" },
             { name: "Redis", icon: RedisIcon, color: "text-red-500" },
             { name: "MySQL", icon: MysqlIcon, color: "text-blue-400" },
@@ -137,7 +137,7 @@ export default function HomePage() {
               icon: JavascriptIcon,
               color: "text-yellow-500",
             },
-            { name: "Express", icon: ExpressIcon, color: "text-gray-500" },
+            { name: "Spring Boot", icon: SpringBoot, color: "text-gray-500" },
           ].map((skill) => (
             <div
               key={skill.name}
