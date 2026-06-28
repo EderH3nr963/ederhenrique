@@ -66,7 +66,7 @@ export default function Contato() {
         </div>
 
         <a
-          href="mailto:seuemail@email.com"
+          href="mailto:ederhenriquevicentejust18@gmail.com"
           className="contato-cta mt-8 inline-flex items-center gap-2 rounded-full bg-purple-600 px-6 py-3 font-medium hover:bg-purple-700 md:mt-0 duration-300 group"
         >
           Entrar em contato <ArrowRight size={18} className="group-hover:translate-x-2 duration-300"/>

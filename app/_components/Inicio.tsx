@@ -139,7 +139,7 @@ export default function Inicio() {
             Me encontre em
           </span>
           <a
-            href=""
+            href="https://github.com/EderH3nr963"
             className="hover:text-white transition-colors duration-300 group"
           >
             <svg
@@ -154,7 +154,7 @@ export default function Inicio() {
             </svg>
           </a>
           <a
-            href=""
+            href="https://www.linkedin.com/in/ederh3nr963/"
             className="hover:text-white transition-colors duration-300 group"
           >
             <svg
@@ -169,7 +169,7 @@ export default function Inicio() {
             </svg>
           </a>
           <a
-            href=""
+            href="ederhenriquevicentejust18@gmail.com"
             className="hover:text-white transition-colors duration-300 group"
           >
             <Mail size={20} className="group-hover:scale-110 duration-300" />
