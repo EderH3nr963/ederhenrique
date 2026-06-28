@@ -20,7 +20,7 @@ export function MouseLight() {
   return (
     <div
       ref={lightRef}
-      className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
+      className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300 not-lg:hidden"
       style={{
         background:
           "radial-gradient(100px circle at var(--x, 50%) var(--y, 50%), rgba(168, 85, 247, 0.15), transparent 80%)",

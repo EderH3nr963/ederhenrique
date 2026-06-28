@@ -17,7 +17,7 @@ export default function Inicio() {
   const buttonsRef = useRef(null);
   const socialRef = useRef(null);
   const cardRef = useRef(null);
-  const statsRef = useRef(null);
+  const statsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
@@ -38,7 +38,7 @@ export default function Inicio() {
       gsap.set(leftItems, { opacity: 0, y: 32 });
       gsap.set(cardRef.current, { opacity: 0, x: 60, scale: 0.92 });
       if (statsRef.current) {
-        gsap.set(statsRef.current.children , { opacity: 0, y: 16 });
+        gsap.set(statsRef.current.children, { opacity: 0, y: 16 });
       }
 
       const tl = gsap.timeline({
