@@ -169,7 +169,7 @@ export default function Inicio() {
             </svg>
           </a>
           <a
-            href="ederhenriquevicentejust18@gmail.com"
+            href="mailto:ederhenriquevicentejust18@gmail.com"
             className="hover:text-white transition-colors duration-300 group"
           >
             <Mail size={20} className="group-hover:scale-110 duration-300" />
