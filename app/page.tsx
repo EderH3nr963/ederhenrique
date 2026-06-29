@@ -13,17 +13,11 @@ export default function Home() {
       <MouseLight />
 
       <Header />
-
       <Inicio />
-
       <Skills />
-
       <Projects />
-
       <Sobre />
-
       <Contato />
-
       <Footer />
     </main>
   );

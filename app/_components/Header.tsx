@@ -3,7 +3,7 @@ import Logo from "@/app/_icons/logo.png";
 
 export default function Header() {
   return (
-    <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+    <header className="relative mx-auto flex max-w-7xl items-center justify-between px-6 py-6 z-50">
       <Image
         src={Logo}
         alt="Logo"

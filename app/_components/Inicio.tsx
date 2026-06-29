@@ -5,6 +5,9 @@ import { ArrowRight, Code2, Download, Mail } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import myProfileImage from "@/app/_images/myProfile.png"
+import Image from "next/image";
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -83,9 +86,9 @@ export default function Inicio() {
     <section
       id="inicio"
       ref={sectionRef}
-      className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2"
+      className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2 "
     >
-      <div>
+      <div className="relative z-40">
         <span
           ref={badgeRef}
           className="rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-xs uppercase text-purple-300"
@@ -177,15 +180,14 @@ export default function Inicio() {
         </div>
       </div>
 
-      <div ref={cardRef} className="relative">
-        <div className="absolute inset-0 rounded-full bg-purple-700/30 blur-3xl" />
+      <div ref={cardRef} className="relative not-lg:xs:mt-50 not-lg:sm:mt-57.5">
+        <div className="absolute inset-0 rounded-full bg-purple-700/30 blur-3xl " />
 
         <div className="relative rounded-3xl border border-purple-500/20 bg-zinc-950 p-8">
           <Code2 className="ml-auto text-purple-400" size={52} />
-
           <div
             ref={statsRef}
-            className="mt-32 grid grid-cols-3 gap-4 rounded-2xl border border-zinc-800 bg-black/40 p-6"
+            className=" relative mt-32 grid grid-cols-3 gap-4 rounded-2xl border border-zinc-800 bg-black/40 p-6 z-20"
           >
             <div>
               <strong className="text-2xl text-purple-400">+2</strong>
@@ -200,8 +202,10 @@ export default function Inicio() {
               <p className="text-sm text-zinc-400">Foco em resultado</p>
             </div>
           </div>
+          <Image src={myProfileImage} alt="" className="absolute w-3/4 not-lg:w-5/6 h-auto bottom-0 z-10 backdrop" draggable={false}/>
         </div>
       </div>
+      
     </section>
   );
 }
