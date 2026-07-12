@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import AssociacaoImage from "@/app/_images/projects/associaoPaulistaBJJ.png";
+import MoneyMagnetImage from "@/app/_images/projects/moneyMagnet.png";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -26,6 +27,7 @@ const projects = [
     title: "MoneyMagnet",
     type: "Dashboard",
     link: "https://money-magnet-iota.vercel.app/",
+    image: MoneyMagnetImage,
     description:
       "Sistema financeiro para controle de receitas, despesas e gráficos.",
     techs: ["React", "Spring Boot", "PostgreSQL"],
